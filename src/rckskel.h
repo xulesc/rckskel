@@ -13,7 +13,7 @@
 #ifndef _RCKSKEL_
 
 #define _RCKSKEL_
-#define _RCKSKEL_VERBOSE_
+//#define _RCKSKEL_VERBOSE_
 
 #define MASTER_ID 0
 
