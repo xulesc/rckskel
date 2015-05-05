@@ -1,0 +1,5 @@
+If the source for HPL did not get moved from its original location in the
+RCCE directory tree, and if Make.ia32.in provides the correct architecture
+dependent parameters, all the user needs to do is
+'configure' (this produces Make.ia32 out of Make.ia32)
+'make'
