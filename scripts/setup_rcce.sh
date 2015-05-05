@@ -15,6 +15,8 @@ check_sane()
     command -v gcc >/dev/null 2>&1 || exit_error "Command gcc not found!"
     # we need g++
     command -v g++ >/dev/null 2>&1 || exit_error "Command g++ not found!"
+    # make dir
+    [ -e /shared/$USER ] || exit_error "please make directory /shared/$USER with read/write permissions!"
 }
 
 # Download the latest stable branch of RCCE
@@ -69,7 +71,7 @@ build_rcce_SCC()
 echo "checking sanity ..."
 check_sane
 echo "downloading the latest stable tag of RCCE ..."
-download_rcce
+#download_rcce
 echo "patching settings and building RCCE emulator & SCC_LINUX mode ..."
 #build_rcce_emulator
 build_rcce_SCC
