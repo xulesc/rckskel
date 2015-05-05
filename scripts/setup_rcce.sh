@@ -64,6 +64,7 @@ build_rcce_SCC()
 #    echo "SCC_LINUX"
     # build the library SCC_LINUX mode
     ./configure SCC_LINUX
+    mkdir -p bin/SCC_LINUX
     make OMP_EMULATOR=$OMP PWRMGMT=$PWR API=$API
 }
 
